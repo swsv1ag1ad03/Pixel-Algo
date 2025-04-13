@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.cover {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Фон обложки */
+}
+
+.logo img {
+    width: 350px; /* Размер логотипа */
+    margin-bottom: 40px;
+}
+
+.cover h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.cover p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn-enter {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Цвет кнопки */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-enter:hover {
+    background-color: #0056b3; /* Цвет кнопки при наведении */
+}
+
+.btn-enter:active {
+    transform: scale(0.95); /* Эффект нажатия */
+}
+
+.info-section {
+    padding: 50px 20px;
+    background-color: #d47f10; /* Фон раздела */
+}
+
+.info-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.screenshots {
+    display: flex;
+    justify-content: space-between;
+}
+
+.screenshots img {
+    width: 45%; /* Ширина скриншотов */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Тень под скриншотами */
+    transition: transform 0.3s ease;
+}
+
+.screenshots img:hover {
+    transform: scale(1.05); /* Эффект наведения на скриншоты */
+}
+.footer {
+    background-color: #333; /* Фон подвала */
+    color: white;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-footer img {
+    width: 100px; /* Размер логотипа в подвале */
+}
+
+.contacts, .links {
+    margin-left: 20px;
+}
+
+.contacts a, .links a {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contacts a:hover, .links a:hover {
+    color: #ccc; /* Цвет ссылок при наведении */
+}
+
+.copyright {
+    margin-top: 10px;
+    text-align: center;
+}
