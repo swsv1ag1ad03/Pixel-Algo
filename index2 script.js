@@ -15,14 +15,14 @@ function get_result_from_cookie() {
             return cookie[1]
         }
     }
-    return '0'*450
+    return '0'*800
 }
 
 
 let temp_result = get_result_from_cookie()
 console.log('temp-result', temp_result)
 if (temp_result != 0){
-    for (let i = 0; i < 450; i ++) {
+    for (let i = 0; i < 800; i ++) {
    let cell = document.createElement('div')
    cell.classList.add('cell')
    cell.dataset.color = temp_result[i]
@@ -30,7 +30,7 @@ if (temp_result != 0){
    field.appendChild(cell) 
     } 
 } else {
-   for (let i = 0; i < 450; i ++) {
+   for (let i = 0; i < 800; i ++) {
     let cell = document.createElement('div')
     cell.classList.add('cell')
     cell.dataset.color = '0'
