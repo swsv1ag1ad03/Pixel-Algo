@@ -114,7 +114,6 @@ body {
     margin-top: 10px;
     text-align: center;
 }
-<<<<<<< HEAD
 
 
 :root {
@@ -140,11 +139,11 @@ body {
 }
 
 .field {
-    width: 70vw;
+    width: 60vw;
     height: 30vw;
     display: grid;
-    grid-template-columns: repeat(30, 1fr);
-    grid-template-rows: repeat(15, 1fr);
+    grid-template-columns: repeat(40, 2fr);
+    grid-template-rows: repeat(30, 2fr);
     gap: 1px;   
 }
 
@@ -241,5 +240,3 @@ body {
     border: 2px solid white;
     box-sizing: border-box;
 }
-=======
->>>>>>> dd86fc40ea75873180d4151676bc0e9cedb788c1
