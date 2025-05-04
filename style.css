@@ -1,113 +1,204 @@
+/* Общие стили */
 body {
     margin: 0;
     padding: 0;
-    width: 100vw;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4fbf6;
+    color: #222;
     min-height: 100vh;
-}
-
-.cover {
-    position: relative;
-    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0; /* Фон обложки */
+}
+
+/* Обложка */
+.cover {
+    background: linear-gradient(135deg, #6fdc89 0%, #e2fbe2 100%);
+    padding: 60px 20px 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 24px rgba(80, 220, 140, 0.06);
+    border-radius: 0 0 32px 32px;
 }
 
 .logo img {
-    width: 350px; /* Размер логотипа */
-    margin-bottom: 40px;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 24px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 16px rgba(80, 220, 140, 0.12);
 }
 
-.cover h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #238d4d;
+    margin-bottom: 32px;
+    margin-top: 0;
 }
 
-.cover p {
-    font-size: 18px;
-    margin-bottom: 30px;
+/* Кнопки */
+.buttons {
+    margin-top: 18px;
 }
 
 .btn-enter {
-    padding: 10px 20px;
+    display: inline-block;
+    margin: 0 12px;
+    padding: 14px 38px;
+    background: linear-gradient(90deg, #34c759 60%, #6fdc89 100%);
+    color: #fff;
     border: none;
-    border-radius: 5px;
-    background-color: #007bff; /* Цвет кнопки */
-    color: white;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(80, 220, 140, 0.08);
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .btn-enter:hover {
-    background-color: #0056b3; /* Цвет кнопки при наведении */
+    background: linear-gradient(90deg, #238d4d 60%, #34c759 100%);
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 4px 16px rgba(80, 220, 140, 0.14);
 }
 
-.btn-enter:active {
-    transform: scale(0.95); /* Эффект нажатия */
-}
-
-.info-section {
-    padding: 50px 20px;
-    background-color: #d47f10; /* Фон раздела */
-}
-
-.info-section h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.info-section p {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.screenshots {
-    display: flex;
-    justify-content: space-between;
-}
-
-.screenshots img {
-    width: 45%; /* Ширина скриншотов */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Тень под скриншотами */
-    transition: transform 0.3s ease;
-}
-
-.screenshots img:hover {
-    transform: scale(1.05); /* Эффект наведения на скриншоты */
-}
+/* Футер */
 .footer {
-    background-color: #333; /* Фон подвала */
-    color: white;
-    padding: 20px;
+    background: #238d4d;
+    color: #fff;
+    padding: 32px 0 10px 0;
+    margin-top: auto;
+    border-radius: 32px 32px 0 0;
+    box-shadow: 0 -2px 16px rgba(80, 220, 140, 0.08);
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    max-width: 900px;
+    margin: 0 auto 12px auto;
 }
 
 .logo-footer img {
-    width: 100px; /* Размер логотипа в подвале */
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+    margin-bottom: 8px;
 }
 
-.contacts, .links {
-    margin-left: 20px;
+.contacts p {
+    margin: 0 0 6px 0;
+    font-weight: 600;
+    color: #a6f4c5;
+    letter-spacing: 1px;
 }
 
 .contacts a, .links a {
+    color: #e2fbe2;
     display: block;
-    margin-bottom: 10px;
-    color: white;
+    margin: 2px 0;
     text-decoration: none;
-    transition: color 0.3s ease;
+    font-size: 1rem;
+    transition: color 0.2s;
 }
 
 .contacts a:hover, .links a:hover {
-    color: #ccc; /* Цвет ссылок при наведении */
+    color: #fff;
+    text-decoration: underline;
+}
+
+.links {
+    margin-top: 12px;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #a6f4c5;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+/* Адаптивность */
+@media (max-width: 700px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    .cover {
+        padding: 36px 8px 24px 8px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .btn-enter {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+    .logo img {
+        width: 80px;
+        height: 80px;
+    }
+    .logo-footer img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.cover {
+    text-align: center;
+    padding: 40px 0;
+}
+.logo img {
+    width: 120px;
+    border-radius: 20px;
+}
+.buttons {
+    margin-top: 20px;
+}
+.btn-enter {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 32px;
+    background: #4f8cff;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+
+}
+.btn-enter:hover {
+    background: #2c5ecf;
+}
+.footer {
+    background: #222;
+    color: #fff;
+    padding: 24px 0 12px 0;
+    text-align: center;
+}
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+.logo-footer img {
+    width: 60px;
+}
+.contacts a, .links a {
+    color: #b0d0ff;
+    display: block;
+    margin: 2px 0;
+    text-decoration: none;
+}
+.contacts a:hover, .links a:hover {
+    text-decoration: underline;
 }
 
 .copyright {
