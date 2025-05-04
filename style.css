@@ -139,11 +139,11 @@ body {
 }
 
 .field {
-    width: 60vw;
+    width: 70vw;
     height: 30vw;
     display: grid;
-    grid-template-columns: repeat(40, 2fr);
-    grid-template-rows: repeat(30, 2fr);
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(15, 1fr);
     gap: 1px;   
 }
 
