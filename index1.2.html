@@ -1,1 +1,42 @@
-
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Piksel</title>
+    <link href="style1.2.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="products">
+    <div class="product">
+      <h3>Товар 1</h3>
+      <span class="price">0</span>
+      <button class="add-to-cart">В корзину</button>
+    </div>
+    <!-- Повторите для других товаров -->
+  </div>
+  
+  <!-- Корзина -->
+  <div class="cart">
+    <h2>Корзина</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Товар</th>
+          <th>Количество</th>
+          <th>Цена</th>
+          <th>Итого</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Товары будут добавляться скриптом -->
+      </tbody>
+    </table>
+    <div class="total">
+      <strong>Общая стоимость: <span id="total-price">0</span> ₽</strong>
+    </div>
+  </div>
+<script src="index1.2 script.js"></script>
+</body>
+</html>
