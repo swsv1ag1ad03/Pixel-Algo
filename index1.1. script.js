@@ -10,4 +10,3 @@ console.log(knopka)
 for (let i = 0; i < knopka.length; i += 1) {
     knopka[i].addEventListener('click', knopka1);
 }
-
